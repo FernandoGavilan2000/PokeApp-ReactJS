@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--darkblue: rgb(20, 28, 63);
+	--fontTitle: 'Permanent Marker', cursive;
+	--fontButton: 'Secular One', sans-serif;
+}
+h1 {
+	font-family: var(--fontTitle);
+	font-size: 3em;
+}
+
+.container {
+	min-height: 100vh;
+}
+
+.Grid_Results {
+	width: 100%;
+	display: flex;
+	background-color: rgb(247, 247, 247);
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.Pokemon_Card_Container {
+	color: white;
+	margin: 5px 5px;
+	text-align: center;
+	flex-basis: 140px;
+	background-color: rgb(20, 20, 20);
+	padding: 5px;
+	min-height: 250px;
+	max-height: 250px;
+}
+.Pokemon_Card_Container > img {
+	width: 95%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	background-color: rgb(56, 56, 56);
+	padding: 10px;
+}
+.Pokemon_Card_Container > h3 {
+	font-size: 0.9em;
+	font-family: 'Trebuchet MS';
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 10px;
+}
+
+.animate__fadeIn {
+	animation-duration: 3s;
+}
+.animate__zoomIn {
+	animation-duration: 2s;
+}
+.btn {
+	font-size: 1em;
+	padding: 0.5em;
+	font-family: var(--fontButton);
+}
+.btn-primary {
+	background-color: var(--darkblue);
+	border: var(--darkblue);
+}
+
+.animate__fadeInDown {
+	animation-duration: 2s;
+}
